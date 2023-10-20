@@ -167,5 +167,31 @@ namespace GlobalMenu {
         private void quemSomosToolStripMenuItem_Click(object sender, EventArgs e) {
             MessageBox.Show("Sei la");
         }
+
+        int clickCount = 0;
+        private void button7_Click(object sender, EventArgs e) {
+            clickCount++;
+            if (clickCount == 5) {
+                MitsubaMenu mitsubauwu = new MitsubaMenu();
+                mitsubauwu.ShowDialog();
+                clickCount = 0;
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e) {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e) {
+            clickCount++;
+            if (clickCount == 5) {
+                Process braveProcess = new Process();
+                braveProcess.StartInfo.FileName = @"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe";
+                braveProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
+                braveProcess.Start();
+                braveProcess.WaitForExit();
+                clickCount = 0;
+            }
+        }
     }
 }
