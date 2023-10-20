@@ -14,6 +14,7 @@ namespace GlobalMenu {
     public partial class SideMenu : Form {
         public SideMenu() {
             InitializeComponent();
+            ToolStripManager.Renderer = new ToolStripProfessionalRenderer(new CustomColorTable());
             customizeMenu();
         }
 
@@ -48,7 +49,7 @@ namespace GlobalMenu {
         }
 
         private void panelSideMenu_Paint(object sender, PaintEventArgs e) {
-            
+
 
         }
 
@@ -66,12 +67,17 @@ namespace GlobalMenu {
         }
 
         private void button6_Click(object sender, EventArgs e) {
-            Process braveProcess = new Process();
-            braveProcess.StartInfo.FileName = @"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe";
-            braveProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
-            braveProcess.Start();
-            braveProcess.WaitForExit();
+            MenuStrip menustr = new MenuStrip();
+            menustr.ShowDialog();
         }
+
+        //  private void button6_Click(object sender, EventArgs e) {
+        //      Process braveProcess = new Process();
+        //      braveProcess.StartInfo.FileName = @"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe";
+        //      braveProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
+        //      braveProcess.Start();
+        //      braveProcess.WaitForExit();
+        //  }
 
         private void button4_Click(object sender, EventArgs e) {
             Notepad notepad = new Notepad();
@@ -99,6 +105,67 @@ namespace GlobalMenu {
             Global menu = new Global();
             menu.ShowDialog();
             this.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e) {
+
+        }
+
+        public class CustomColorTable : ProfessionalColorTable {
+            public override Color MenuStripGradientBegin => Color.FromArgb(0, 0, 0);
+            public override Color MenuStripGradientEnd => Color.FromArgb(0, 0, 0);
+
+            public override Color MenuItemPressedGradientBegin => Color.FromArgb(46, 46, 46);
+            public override Color MenuItemPressedGradientMiddle => Color.FromArgb(46, 46, 46);
+            public override Color MenuItemPressedGradientEnd => Color.FromArgb(46, 46, 46);
+
+            public override Color MenuBorder => Color.FromArgb(0, 0, 0);
+
+            public override Color MenuItemSelected => Color.FromArgb(61, 61, 61);
+            public override Color MenuItemSelectedGradientBegin => Color.FromArgb(61, 61, 61);
+            public override Color MenuItemSelectedGradientEnd => Color.FromArgb(61, 61, 61);
+            public override Color MenuItemBorder => Color.FromArgb(112, 112, 112);
+
+            public override Color ToolStripDropDownBackground => Color.FromArgb(46, 46, 46);
+
+            public override Color ImageMarginGradientBegin => Color.FromArgb(46, 46, 46);
+            public override Color ImageMarginGradientMiddle => Color.FromArgb(46, 46, 46);
+            public override Color ImageMarginGradientEnd => Color.FromArgb(46, 46, 46);
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e) {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e) {
+
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e) {
+
+        }
+
+        private void menuStrip2_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e) {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e) {
+            var resp = MessageBox.Show("Quer Encerrar o Programa?", "Info Box", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resp == DialogResult.Yes) {
+                Environment.Exit(0);
+            }
+        }
+
+        private void fToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.Hide();
+            Consulta conlt = new Consulta();
+            conlt.ShowDialog();
+            this.Show();
+        }
+
+        private void quemSomosToolStripMenuItem_Click(object sender, EventArgs e) {
+            MessageBox.Show("Sei la");
         }
     }
 }

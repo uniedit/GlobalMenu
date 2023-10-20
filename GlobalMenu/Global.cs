@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
-using System.Windows.Forms;
 
 namespace GlobalMenu {
     public partial class Global : Form {

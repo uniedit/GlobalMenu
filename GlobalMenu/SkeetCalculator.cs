@@ -15,7 +15,6 @@ namespace Skeet {
             InitializeComponent();
         }
 
-        string CalTotal;
         double num1;
         double num2;
         string option;

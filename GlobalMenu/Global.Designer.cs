@@ -26,9 +26,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Global));
             this.button2 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // button2
@@ -51,6 +51,19 @@
             this.button2.Text = "Windows Apps";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "dd.png");
+            this.imageList1.Images.SetKeyName(1, "men.png");
+            this.imageList1.Images.SetKeyName(2, "menu.png");
+            this.imageList1.Images.SetKeyName(3, "image (3).png");
+            this.imageList1.Images.SetKeyName(4, "download (1).png");
+            this.imageList1.Images.SetKeyName(5, "logout.png");
+            this.imageList1.Images.SetKeyName(6, "image (3).png");
+            this.imageList1.Images.SetKeyName(7, "image (4).png");
             // 
             // button3
             // 
@@ -94,19 +107,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "dd.png");
-            this.imageList1.Images.SetKeyName(1, "men.png");
-            this.imageList1.Images.SetKeyName(2, "menu.png");
-            this.imageList1.Images.SetKeyName(3, "image (3).png");
-            this.imageList1.Images.SetKeyName(4, "download (1).png");
-            this.imageList1.Images.SetKeyName(5, "logout.png");
-            this.imageList1.Images.SetKeyName(6, "image (3).png");
-            this.imageList1.Images.SetKeyName(7, "image (4).png");
-            // 
             // Global
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,7 +120,6 @@
             this.MaximizeBox = false;
             this.Name = "Global";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu Options";
             this.ResumeLayout(false);
 
