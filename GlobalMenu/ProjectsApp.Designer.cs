@@ -121,7 +121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(435, 474);
+            this.ClientSize = new System.Drawing.Size(432, 474);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -130,6 +130,7 @@
             this.MaximizeBox = false;
             this.Name = "ProjectsApp";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Projetos";
             this.ResumeLayout(false);
             this.PerformLayout();

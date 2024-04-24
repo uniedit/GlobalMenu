@@ -74,6 +74,7 @@
             this.MaximizeBox = false;
             this.Name = "Notepad";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Notepad";
             this.ResumeLayout(false);
 

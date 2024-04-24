@@ -35,8 +35,8 @@ namespace GlobalMenu {
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            Consulta conslt = new Consulta();
-            conslt.ShowDialog();
+          Fornecedores forn = new Fornecedores();
+          forn.ShowDialog();
         }
     }
 }

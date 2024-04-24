@@ -159,7 +159,7 @@ namespace GlobalMenu {
 
         private void fToolStripMenuItem_Click(object sender, EventArgs e) {
             this.Hide();
-            Consulta conlt = new Consulta();
+            Cadastro conlt = new Cadastro();
             conlt.ShowDialog();
             this.Show();
         }
@@ -170,12 +170,10 @@ namespace GlobalMenu {
 
         int clickCount = 0;
         private void button7_Click(object sender, EventArgs e) {
-            clickCount++;
-            if (clickCount == 5) {
-                MitsubaMenu mitsubauwu = new MitsubaMenu();
-                mitsubauwu.ShowDialog();
-                clickCount = 0;
-            }
+            this.Hide();
+            EditorTexto editor = new EditorTexto();
+            editor.ShowDialog();
+            this.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e) {
@@ -186,10 +184,29 @@ namespace GlobalMenu {
             clickCount++;
             if (clickCount == 5) {
                 Process braveProcess = new Process();
-                braveProcess.StartInfo.FileName = @"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe";
+                braveProcess.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
                 braveProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
                 braveProcess.Start();
                 braveProcess.WaitForExit();
+                clickCount = 0;
+            }
+        }
+
+        private void fornedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Fornecedores forn = new Fornecedores();
+            forn.ShowDialog();
+            this.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            clickCount++;
+            if (clickCount == 5)
+            {
+                MitsubaMenu mitsubauwu = new MitsubaMenu();
+                mitsubauwu.ShowDialog();
                 clickCount = 0;
             }
         }

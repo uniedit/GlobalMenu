@@ -170,6 +170,7 @@
             this.MaximizeBox = false;
             this.Name = "WindowsApp";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Aplicativos";
             this.Load += new System.EventHandler(this.WindowsApp_Load);
             this.ResumeLayout(false);

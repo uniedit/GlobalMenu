@@ -120,6 +120,7 @@
             this.MaximizeBox = false;
             this.Name = "Global";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu Options";
             this.ResumeLayout(false);
 

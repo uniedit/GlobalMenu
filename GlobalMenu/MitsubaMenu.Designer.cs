@@ -58,6 +58,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "MitsubaMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Mitsuba UwU";
             this.ResumeLayout(false);
             this.PerformLayout();

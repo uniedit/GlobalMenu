@@ -54,12 +54,13 @@
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.sistemaToolStripMenuItem.Click += new System.EventHandler(this.sistemaToolStripMenuItem_Click_1);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // consultaToolStripMenuItem
@@ -70,6 +71,7 @@
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.consultaToolStripMenuItem.Text = "Formulario";
+            this.consultaToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // fToolStripMenuItem
             // 
@@ -77,6 +79,7 @@
             this.fToolStripMenuItem.Name = "fToolStripMenuItem";
             this.fToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fToolStripMenuItem.Text = "Consulta";
+            this.fToolStripMenuItem.Click += new System.EventHandler(this.fToolStripMenuItem_Click);
             // 
             // infoToolStripMenuItem
             // 
@@ -91,7 +94,7 @@
             // 
             this.quemSomosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
-            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem Somos?";
             // 
             // MenuStrip
@@ -102,6 +105,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MenuStrip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MenuStrip";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

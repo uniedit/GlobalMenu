@@ -74,6 +74,7 @@
             this.MaximizeBox = false;
             this.Name = "Paint";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Paint";
             this.ResumeLayout(false);
 

@@ -21,8 +21,8 @@ namespace GlobalMenu {
         }
 
         private void consultaToolStripMenuItem1_Click(object sender, EventArgs e) {
-            Consulta consult = new Consulta();
-            consult.ShowDialog();
+             Cadastro consult = new Cadastro();
+             consult.ShowDialog();
         }
 
         private void sistemaToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -52,6 +52,17 @@ namespace GlobalMenu {
             public override Color ImageMarginGradientBegin => Color.FromArgb(46, 46, 46);
             public override Color ImageMarginGradientMiddle => Color.FromArgb(46, 46, 46);
             public override Color ImageMarginGradientEnd => Color.FromArgb(46, 46, 46);
+        }
+
+        private void fToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro consult = new Cadastro();
+            consult.ShowDialog();
+        }
+
+        private void sistemaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            InitializeComponent();
         }
     }
 }

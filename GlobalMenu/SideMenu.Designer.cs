@@ -26,6 +26,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideMenu));
             this.bntProject = new System.Windows.Forms.Button();
             this.panelSubMenuProjects = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fornedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quemSomosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,14 +78,35 @@
             // panelSubMenuProjects
             // 
             this.panelSubMenuProjects.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panelSubMenuProjects.Controls.Add(this.button9);
             this.panelSubMenuProjects.Controls.Add(this.button7);
             this.panelSubMenuProjects.Controls.Add(this.button6);
             this.panelSubMenuProjects.Controls.Add(this.button1);
             this.panelSubMenuProjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuProjects.Location = new System.Drawing.Point(0, 45);
             this.panelSubMenuProjects.Name = "panelSubMenuProjects";
-            this.panelSubMenuProjects.Size = new System.Drawing.Size(279, 125);
+            this.panelSubMenuProjects.Size = new System.Drawing.Size(279, 166);
             this.panelSubMenuProjects.TabIndex = 2;
+            // 
+            // button9
+            // 
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(0, 123);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button9.Size = new System.Drawing.Size(279, 41);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "None";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button7
             // 
@@ -100,7 +123,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(279, 41);
             this.button7.TabIndex = 3;
-            this.button7.Text = "None";
+            this.button7.Text = "EditorTexto";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -155,7 +178,7 @@
             this.btnWinApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWinApps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWinApps.ForeColor = System.Drawing.Color.White;
-            this.btnWinApps.Location = new System.Drawing.Point(0, 170);
+            this.btnWinApps.Location = new System.Drawing.Point(0, 211);
             this.btnWinApps.Name = "btnWinApps";
             this.btnWinApps.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnWinApps.Size = new System.Drawing.Size(279, 45);
@@ -173,7 +196,7 @@
             this.panelSubMenuWin.Controls.Add(this.button3);
             this.panelSubMenuWin.Controls.Add(this.button4);
             this.panelSubMenuWin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuWin.Location = new System.Drawing.Point(0, 215);
+            this.panelSubMenuWin.Location = new System.Drawing.Point(0, 256);
             this.panelSubMenuWin.Name = "panelSubMenuWin";
             this.panelSubMenuWin.Size = new System.Drawing.Size(279, 166);
             this.panelSubMenuWin.TabIndex = 4;
@@ -283,7 +306,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 381);
+            this.button8.Location = new System.Drawing.Point(0, 422);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(279, 45);
@@ -319,14 +342,15 @@
             // 
             this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fToolStripMenuItem});
+            this.fToolStripMenuItem,
+            this.fornedoresToolStripMenuItem});
             this.consultaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
@@ -336,9 +360,17 @@
             // 
             this.fToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fToolStripMenuItem.Name = "fToolStripMenuItem";
-            this.fToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.fToolStripMenuItem.Text = "Consulta";
             this.fToolStripMenuItem.Click += new System.EventHandler(this.fToolStripMenuItem_Click);
+            // 
+            // fornedoresToolStripMenuItem
+            // 
+            this.fornedoresToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.fornedoresToolStripMenuItem.Name = "fornedoresToolStripMenuItem";
+            this.fornedoresToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.fornedoresToolStripMenuItem.Text = "Fornedores";
+            this.fornedoresToolStripMenuItem.Click += new System.EventHandler(this.fornedoresToolStripMenuItem_Click);
             // 
             // infoToolStripMenuItem
             // 
@@ -353,7 +385,7 @@
             // 
             this.quemSomosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.quemSomosToolStripMenuItem.Name = "quemSomosToolStripMenuItem";
-            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quemSomosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.quemSomosToolStripMenuItem.Text = "Quem Somos?";
             this.quemSomosToolStripMenuItem.Click += new System.EventHandler(this.quemSomosToolStripMenuItem_Click);
             // 
@@ -382,6 +414,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "SideMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SideMenu";
             this.panelSubMenuProjects.ResumeLayout(false);
             this.panelSubMenuWin.ResumeLayout(false);
@@ -416,5 +449,7 @@
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quemSomosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem fornedoresToolStripMenuItem;
+        private System.Windows.Forms.Button button9;
     }
 }

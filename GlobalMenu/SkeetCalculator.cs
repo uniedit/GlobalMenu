@@ -50,12 +50,9 @@ namespace Skeet {
         }
 
         private void button12_Click(object sender, EventArgs e) {
-            
             option = "+";
             num1 = double.Parse(txtTotal.Text);
             txtTotal.Clear();
-
-
         }
 
         private void button2_Click(object sender, EventArgs e) {
@@ -103,40 +100,27 @@ namespace Skeet {
         }
 
         private void btnMin_Click(object sender, EventArgs e) {
-
-            try {
                     option = "-";
                     num1 = double.Parse(txtTotal.Text);
                     txtTotal.Clear();
-                } catch (Exception exErro) {
-
-            }
-
-
         }
 
         private void btnMultiple_Click(object sender, EventArgs e) {
-            
             option = "*";
             num1 = double.Parse(txtTotal.Text);
             txtTotal.Clear();
-
         }
 
         private void btnDiv_Click(object sender, EventArgs e) {
-            
             option = "/";
             num1 = double.Parse(txtTotal.Text);
             txtTotal.Clear();
-
         }
 
         private void button20_Click(object sender, EventArgs e) {
-            
             option = "√";
             num1 = double.Parse(txtTotal.Text);
             txtTotal.Clear();
-
         }
 
         private void btnEqual_Click(object sender, EventArgs e) {
@@ -146,11 +130,9 @@ namespace Skeet {
                 if (option.Equals("+"))
                     result = num1 + num2;
 
-                if (option.Equals("-")) {
+                if (option.Equals("-")) 
                     result = num1 - num2;
-                }
                 
-
                 if (option.Equals("*"))
                     result = num1 * num2;
 
@@ -162,10 +144,8 @@ namespace Skeet {
 
                 txtTotal.Text = result + "";
             } catch (Exception exErro) {
-
                 MessageBox.Show("Aviso: " + exErro.Message, "Window Box");
                 txtTotal.Focus();
-
             }
         }
 
@@ -174,7 +154,6 @@ namespace Skeet {
             result = (0);
             num1 = (0);
             num2 = (0);
-
         }
 
         private void button1_Click_1(object sender, EventArgs e) {
@@ -193,8 +172,6 @@ namespace Skeet {
                 dobro = result + result;
                 result = result - dobro;
             }
-
-
             txtTotal.Text = result + "";
         }
 
