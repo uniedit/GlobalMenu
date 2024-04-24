@@ -54,8 +54,10 @@ namespace GlobalMenu {
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            this.Hide();
             SkeetCalculator skooto = new SkeetCalculator();
             skooto.ShowDialog();
+            this.Show();
         }
 
         private void button22_Click(object sender, EventArgs e) {
@@ -183,11 +185,11 @@ namespace GlobalMenu {
         private void pictureBox1_Click(object sender, EventArgs e) {
             clickCount++;
             if (clickCount == 5) {
-                Process braveProcess = new Process();
-                braveProcess.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
-                braveProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
-                braveProcess.Start();
-                braveProcess.WaitForExit();
+                Process FireFoxProcess = new Process();
+                FireFoxProcess.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+                FireFoxProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
+                FireFoxProcess.Start();
+                FireFoxProcess.WaitForExit();
                 clickCount = 0;
             }
         }
@@ -209,6 +211,10 @@ namespace GlobalMenu {
                 mitsubauwu.ShowDialog();
                 clickCount = 0;
             }
+        }
+
+        private void SideMenu_Load(object sender, EventArgs e) {
+            button6.Enabled = false;
         }
     }
 }

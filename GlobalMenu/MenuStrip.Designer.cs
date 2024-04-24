@@ -77,7 +77,7 @@
             // 
             this.fToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fToolStripMenuItem.Name = "fToolStripMenuItem";
-            this.fToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.fToolStripMenuItem.Text = "Consulta";
             this.fToolStripMenuItem.Click += new System.EventHandler(this.fToolStripMenuItem_Click);
             // 
@@ -105,6 +105,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MenuStrip";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MenuStrip";
             this.menuStrip1.ResumeLayout(false);

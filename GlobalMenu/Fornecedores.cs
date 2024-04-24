@@ -80,14 +80,14 @@ namespace GlobalMenu
                     ComandoSQL = new NpgsqlCommand(strSQL, Conectar);
 
                     ComandoSQL.ExecuteNonQuery();
-                    MessageBox.Show("Registro ExcluÃ­do com Sucesso...", "Sistema Informa");
+                    MessageBox.Show("Registro Excluido com Sucesso...", "Sistema Informa");
                 }
                 else
                 {
-                    MessageBox.Show("OperaÃ§Ã£o Cancelada!!!", "Sistema Informa");
+                    MessageBox.Show("Operação Cancelada!!!", "Sistema Informa");
                 }
 
-                MessageBox.Show("Limpar FormulÃ¡rio (Dados)...", "Sistema Informa");
+                MessageBox.Show("Limpar Formulario (Dados)...", "Sistema Informa");
 
                 LimparObjetos();
 
@@ -127,7 +127,7 @@ namespace GlobalMenu
 
                 Conectar.Open();
 
-                if (DialogResult.Yes == MessageBox.Show("Confirma AlteraÃ§Ã£o do Registro?", "Sistema Informa",
+                if (DialogResult.Yes == MessageBox.Show("Confirma Alteração do Registro?", "Sistema Informa",
                                                 MessageBoxButtons.YesNo,
                                                 MessageBoxIcon.Question,
                                                 MessageBoxDefaultButton.Button2))
@@ -148,10 +148,10 @@ namespace GlobalMenu
                 }
                 else
                 {
-                    MessageBox.Show("OperaÃ§Ã£o Cancelada!!!", "Sistema Informa");
+                    MessageBox.Show("Operacão Cancelada!!!", "Sistema Informa");
                 }
 
-                MessageBox.Show("Limpar FormulÃ¡rio (Dados)...", "Sistema Informa");
+                MessageBox.Show("Limpar Formulario (Dados)...", "Sistema Informa");
 
                 LimparObjetos();
 
@@ -219,7 +219,7 @@ namespace GlobalMenu
                     }
                     else
                     {
-                        MessageBox.Show("CNPJ " + mkt_CNPJ.Text + " NÃ£o Localizado!!!", "Sistema Informa");
+                        MessageBox.Show("CNPJ " + mkt_CNPJ.Text + " Não Localizado!!!", "Sistema Informa");
                         mkt_CNPJ.Focus();
                     }
 
@@ -270,7 +270,7 @@ namespace GlobalMenu
 
                     if (LerRegistro.Read())
                     {
-                        MessageBox.Show("Cliente jÃ¡ Existe!!!", "Sistema Informa");
+                        MessageBox.Show("Cliente já Existe!!!", "Sistema Informa");
                     }
                     else
                     {

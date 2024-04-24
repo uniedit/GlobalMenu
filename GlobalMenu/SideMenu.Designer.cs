@@ -79,13 +79,13 @@
             // 
             this.panelSubMenuProjects.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panelSubMenuProjects.Controls.Add(this.button9);
-            this.panelSubMenuProjects.Controls.Add(this.button7);
             this.panelSubMenuProjects.Controls.Add(this.button6);
+            this.panelSubMenuProjects.Controls.Add(this.button7);
             this.panelSubMenuProjects.Controls.Add(this.button1);
             this.panelSubMenuProjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuProjects.Location = new System.Drawing.Point(0, 45);
             this.panelSubMenuProjects.Name = "panelSubMenuProjects";
-            this.panelSubMenuProjects.Size = new System.Drawing.Size(279, 166);
+            this.panelSubMenuProjects.Size = new System.Drawing.Size(279, 163);
             this.panelSubMenuProjects.TabIndex = 2;
             // 
             // button9
@@ -118,7 +118,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 82);
+            this.button7.Location = new System.Drawing.Point(0, 41);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(279, 41);
@@ -138,7 +138,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 41);
+            this.button6.Location = new System.Drawing.Point(0, 82);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(279, 41);
@@ -178,7 +178,7 @@
             this.btnWinApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWinApps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWinApps.ForeColor = System.Drawing.Color.White;
-            this.btnWinApps.Location = new System.Drawing.Point(0, 211);
+            this.btnWinApps.Location = new System.Drawing.Point(0, 208);
             this.btnWinApps.Name = "btnWinApps";
             this.btnWinApps.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnWinApps.Size = new System.Drawing.Size(279, 45);
@@ -196,7 +196,7 @@
             this.panelSubMenuWin.Controls.Add(this.button3);
             this.panelSubMenuWin.Controls.Add(this.button4);
             this.panelSubMenuWin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuWin.Location = new System.Drawing.Point(0, 256);
+            this.panelSubMenuWin.Location = new System.Drawing.Point(0, 253);
             this.panelSubMenuWin.Name = "panelSubMenuWin";
             this.panelSubMenuWin.Size = new System.Drawing.Size(279, 166);
             this.panelSubMenuWin.TabIndex = 4;
@@ -306,7 +306,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 422);
+            this.button8.Location = new System.Drawing.Point(0, 419);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(279, 45);
@@ -324,7 +324,7 @@
             this.infoToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(281, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(277, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked_1);
@@ -405,17 +405,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(281, 446);
+            this.ClientSize = new System.Drawing.Size(277, 446);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.menuStrip2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "SideMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SideMenu";
+            this.Load += new System.EventHandler(this.SideMenu_Load);
             this.panelSubMenuProjects.ResumeLayout(false);
             this.panelSubMenuWin.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);

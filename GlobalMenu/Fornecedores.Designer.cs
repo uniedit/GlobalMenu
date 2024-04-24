@@ -293,7 +293,10 @@
             this.Controls.Add(this.Telefone);
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.ID);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Fornecedores";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fornecedores";
             this.Load += new System.EventHandler(this.Fornecedores_Load);

@@ -71,8 +71,10 @@
             this.ClientSize = new System.Drawing.Size(509, 229);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Paint";
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Paint";

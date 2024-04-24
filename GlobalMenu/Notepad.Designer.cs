@@ -37,7 +37,7 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(321, 69);
+            this.button1.Location = new System.Drawing.Point(321, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 66);
             this.button1.TabIndex = 17;
@@ -55,7 +55,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(36, 69);
+            this.button3.Location = new System.Drawing.Point(38, 81);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 66);
             this.button3.TabIndex = 16;
@@ -71,8 +71,10 @@
             this.ClientSize = new System.Drawing.Size(509, 229);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Notepad";
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Notepad";

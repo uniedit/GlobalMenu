@@ -38,5 +38,14 @@ namespace GlobalMenu {
           Fornecedores forn = new Fornecedores();
           forn.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            EditorTexto etext = new EditorTexto();
+            etext.ShowDialog();
+        }
     }
 }
