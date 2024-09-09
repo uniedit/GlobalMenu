@@ -45,8 +45,8 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Npgsql, Version=8.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Npgsql.8.0.2\lib\netstandard2.0\Npgsql.dll</HintPath>
+    <Reference Include="Npgsql, Version=8.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.8.0.3\lib\netstandard2.0\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -113,6 +113,12 @@
     <Compile Include="Fornecedores.Designer.cs">
       <DependentUpon>Fornecedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Periodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periodos.Designer.cs">
+      <DependentUpon>Periodos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Safaire\AdminCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Safaire\AdminProdutos.Designer.cs">
       <DependentUpon>AdminProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Semaforo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Semaforo.Designer.cs">
+      <DependentUpon>Semaforo.cs</DependentUpon>
     </Compile>
     <Compile Include="SideMenu.cs">
       <SubType>Form</SubType>
@@ -187,6 +199,12 @@
     <Compile Include="MitsubaMenu.Designer.cs">
       <DependentUpon>MitsubaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser.Designer.cs">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +223,9 @@
     <EmbeddedResource Include="MenuStrip.resx">
       <DependentUpon>MenuStrip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Periodos.resx">
+      <DependentUpon>Periodos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Safaire\AdminCadastro.resx">
       <DependentUpon>AdminCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Safaire\AdminProdutos.resx">
       <DependentUpon>AdminProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Semaforo.resx">
+      <DependentUpon>Semaforo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideMenu.resx">
       <DependentUpon>SideMenu.cs</DependentUpon>
@@ -246,6 +270,9 @@
     </Compile>
     <EmbeddedResource Include="MitsubaMenu.resx">
       <DependentUpon>MitsubaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser.resx">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsApp.resx">
       <DependentUpon>WindowsApp.cs</DependentUpon>

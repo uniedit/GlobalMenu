@@ -216,5 +216,26 @@ namespace GlobalMenu {
         private void SideMenu_Load(object sender, EventArgs e) {
             button6.Enabled = false;
         }
+
+        private void button9_Click_1(object sender, EventArgs e) {
+            this.Hide();
+            Periodos period = new Periodos();
+            period.ShowDialog();
+            this.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e) {
+            this.Hide();
+            WebBrowser web = new WebBrowser();
+            web.ShowDialog();
+            this.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e) {
+            this.Hide();
+            Semaforo semaforo = new Semaforo();
+            semaforo.ShowDialog();
+            this.Show();
+        }
     }
 }
