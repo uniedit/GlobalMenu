@@ -237,5 +237,9 @@ namespace GlobalMenu {
             semaforo.ShowDialog();
             this.Show();
         }
+
+        private void panelSubMenuProjects_Paint(object sender, PaintEventArgs e) {
+
+        }
     }
 }
