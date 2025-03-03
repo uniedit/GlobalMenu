@@ -1,4 +1,4 @@
-# GlobalMenu (Projeto parado devido saída do ensino médio >^<
+# GlobalMenu (Projeto parado devido saída do ensino médio >^<)
 
 
 ### Passo 1:
