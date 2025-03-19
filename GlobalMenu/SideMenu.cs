@@ -186,7 +186,7 @@ namespace GlobalMenu {
             clickCount++;
             if (clickCount == 5) {
                 Process FireFoxProcess = new Process();
-                FireFoxProcess.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+                FireFoxProcess.StartInfo.FileName = @"C:\Program Files\Mozilla Firefox\firefox.exe";
                 FireFoxProcess.StartInfo.Arguments = "https://www.tiktok.com/@am.mats/video/7276804838795562273?q=indo%20ali&t=1695770502823";
                 FireFoxProcess.Start();
                 FireFoxProcess.WaitForExit();
